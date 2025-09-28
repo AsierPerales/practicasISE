@@ -1,2 +1,2 @@
 # practicasISE
-Grupo B1
+Grupo D1
