@@ -1,6 +1,9 @@
 #!/bin/bash
 # Script para crear, habilitar y ejecutar el servicio remove-kvm.service
 
+## El error era este:
+## https://superuser.com/questions/1845776/virtualbox-cant-operate-in-vmx-mode
+
 SERVICE_FILE="/etc/systemd/system/remove-kvm.service"
 
 # Crear el servicio
