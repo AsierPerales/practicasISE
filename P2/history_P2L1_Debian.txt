@@ -1,0 +1,35 @@
+    1  2025-09-30 14:59:37 lsblk
+    2  2025-09-30 20:36:35 nano /home/asier/.bashrc 
+    3  2025-09-30 20:38:30 source /home/asier/.bashrc 
+    4  2025-09-30 20:38:33 exit
+    5  2025-09-30 20:38:55 history
+    6  2025-09-30 20:39:50 su
+    7  2025-09-30 20:40:59 exit
+    8  2025-09-30 20:41:34 cat /etc/groups
+    9  2025-09-30 20:41:35 cat /etc/group
+   10  2025-09-30 20:42:00 sudo ls /
+   11  2025-09-30 20:42:09 sudo poweroff
+   12  2025-10-23 18:13:36 ip a
+   13  2025-10-23 18:18:01 sudo ip addr add 192.168.56.105/24 dev enp0s8
+   14  2025-10-23 18:18:08 ip a
+   15  2025-10-23 18:19:11 sudo ip link set enp0s8 up
+   16  2025-10-23 18:19:27 ip a
+   17  2025-10-23 18:20:04 ping 192.168.56.1
+   18  2025-10-23 18:25:32 ping 192.168.56.110
+   19  2025-10-23 18:27:20 ip a
+   20  2025-10-23 18:29:40 ssh
+   21  2025-10-23 18:29:55 sudo apt install openssh-server
+   22  2025-10-23 18:32:48 ls
+   23  2025-10-23 18:34:10 ip a
+   24  2025-10-23 18:34:53 sudo systemctl status sshd
+   25  2025-10-23 18:36:47 ssh asier@192.168.56.110
+   26  2025-10-23 18:36:52 ssh asier@192.168.56.110 -p 22022
+   27  2025-10-23 18:41:09 nano /etc/ssh/sshd_config
+   28  2025-10-23 18:41:36 sudo nano /etc/ssh/sshd_config
+   29  2025-10-23 18:41:59 sudo systemctl restart sshd
+   30  2025-10-23 18:42:08 sudo systemctl status sshd
+   31  2025-10-23 18:43:29 sudo nano /etc/ssh/sshd_config
+   32  2025-10-23 18:43:39 sudo systemctl restart sshd
+   33  2025-10-23 18:43:42 sudo systemctl status sshd
+   34  2025-10-23 18:48:57 history
+   35  2025-10-23 18:49:36 history > historyP2L1.txt

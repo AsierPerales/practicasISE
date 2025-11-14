@@ -1,0 +1,75 @@
+    1  lsblk
+    2  fdisk /dev/sdb 
+    3  visudo /etc/sudoers
+    4  logout
+    5  lsblk
+    6  fdisk /dev/sdb
+    7  sudo fdisk /dev/sdb
+    8  lsblk
+    9  pvcreate /dev/sdb1
+   10  sudo pvcreate /dev/sdb1
+   11  lsblk
+   12  pvs
+   13  sudo pvs
+   14  sudo vgextend almalinux /dev/sdb1
+   15  sudo vgs
+   16  sudo lvcreate -n new_var -L 3G almalinux
+   17  lvs
+   18  sudo lvs
+   19  sudo mkfs -t ext4 /dev/almalinux/new_var 
+   20  mkdir /new_var
+   21  sudo mkdir /new_var
+   22  sudo mount /dev/almalinux/new_var /new_var
+   23  lsblk
+   24  su
+   25  ip a
+   26  sudo ip addr add 192.168.56.110/24 dev enp0s8
+   27  ip a
+   28  ping 192.168.56.1
+   29  ping 192.168.56.105
+   30  systemctl status sshd
+   31  ssh asier@192.168.56.105
+   32  ssh asier@192.168.56.105 -p 22022
+   33  ip a
+   34  sudo ip addr add 192.168.56.110/24 dev enp0s8
+   35  ip a
+   36  ssh asier@192.168.56.105 -p 22022
+   37  ip a
+   38  sudo ip addr add 192.168.56.110/24 dev enp0s8
+   39  ip a
+   40  ssh asier@192.168.56.105 -p 22022
+   41  sudo vi /etc/ssh/sshd_config 
+   42  systemctl restart sshd
+   43  sudo vi /etc/ssh/sshd_config 
+   44  dnf provides semanage
+   45  ip a
+   46  sudo dnf provides semanage
+   47  ping 8.8.8.8
+   48  ip a
+   49  dnf install policycoreutils-python-utils
+   50  sudo dnf install policycoreutils-python-utils
+   51  man semanage
+   52  sudo dnf provides semanage
+   53  ip a
+   54  sudo nmtui
+   55  ip a
+   56  sudo dnf provides semanage
+   57  sudo dnf install policycoreutils-python-utils
+   58  man semanage
+   59  semanage port -l | grep ssh
+   60  sudo semanage port -l | grep ssh
+   61  semanage port -a -t ssh_port_t -p tcp 22022
+   62  sudo semanage port -a -t ssh_port_t -p tcp 22022
+   63  sudo semanage port -l | grep ssh
+   64  ip a
+   65  sudo semanage port -a -t ssh_port_t -p tcp 22022
+   66  sudo semanage port -l | grep ssh
+   67  sudo vi /etc/ssh/sshd_config 
+   68  systemctl restart sshd
+   69  firewall-cmd --list-all
+   70  sudo firewall-cmd --list-all
+   71  sudo firewall-cmd --add-port 22022/tcp --permanent
+   72  sudo firewall-cmd --reload
+   73  history
+   74  ls
+   75  history > history_P2L1_Alma.txt

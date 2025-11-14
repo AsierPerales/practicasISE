@@ -1,0 +1,99 @@
+    1  2025-10-30 12:40:53 lsblk
+    2  2025-10-30 12:40:53 fdisk /dev/sdb 
+    3  2025-10-30 12:40:53 visudo /etc/sudoers
+    4  2025-10-30 12:40:53 logout
+    5  2025-10-30 12:40:53 lsblk
+    6  2025-10-30 12:40:53 fdisk /dev/sdb
+    7  2025-10-30 12:40:53 sudo fdisk /dev/sdb
+    8  2025-10-30 12:40:53 lsblk
+    9  2025-10-30 12:40:53 pvcreate /dev/sdb1
+   10  2025-10-30 12:40:53 sudo pvcreate /dev/sdb1
+   11  2025-10-30 12:40:53 lsblk
+   12  2025-10-30 12:40:53 pvs
+   13  2025-10-30 12:40:53 sudo pvs
+   14  2025-10-30 12:40:53 sudo vgextend almalinux /dev/sdb1
+   15  2025-10-30 12:40:53 sudo vgs
+   16  2025-10-30 12:40:53 sudo lvcreate -n new_var -L 3G almalinux
+   17  2025-10-30 12:40:53 lvs
+   18  2025-10-30 12:40:53 sudo lvs
+   19  2025-10-30 12:40:53 sudo mkfs -t ext4 /dev/almalinux/new_var 
+   20  2025-10-30 12:40:53 mkdir /new_var
+   21  2025-10-30 12:40:53 sudo mkdir /new_var
+   22  2025-10-30 12:40:53 sudo mount /dev/almalinux/new_var /new_var
+   23  2025-10-30 12:40:53 lsblk
+   24  2025-10-30 12:40:53 su
+   25  2025-10-30 12:40:53 exit
+   26  2025-10-30 12:40:56 ip a
+   27  2025-10-30 13:11:34 sudo nmcli conn type ethernet ifname enp0s8 con-name enp0s8 ipv4.addresses 192.168.56.110/24 ipv4.gateway 192.168.56.1 ipv4.method manual
+   28  2025-10-30 13:11:57 sudo nmcli conn add type ethernet ifname enp0s8 con-name enp0s8 ipv4.addresses 192.168.56.110/24 ipv4.gateway 192.168.56.1 ipv4.method manual
+   29  2025-10-30 13:12:08 ip a
+   30  2025-10-30 13:15:18 ping 8.8.8.8
+   31  2025-10-30 13:15:26 nmtui
+   32  2025-11-03 07:19:29 ip a
+   33  2025-11-03 07:19:32 ping 8.8.8.8
+   34  2025-11-03 07:19:39 sudo dnf install httpd
+   35  2025-11-03 07:21:38 ssh-keygen
+   36  2025-11-03 07:22:07 ssh asier@192.168.56.105 -p 22022
+   37  2025-11-03 07:24:08 ssh-copy-id .ssh/id_rsa.pub 192.168.56.105
+   38  2025-11-03 07:25:22 ssh-copy-id .ssh/id_rsa.pub asier@192.168.56.105
+   39  2025-11-03 07:26:33 ssh-copy-id -i .ssh/id_rsa.pub -o Port=22022 asier@192.168.56.105
+   40  2025-11-03 07:26:51 ssh asier@192.168.56.105
+   41  2025-11-03 07:26:57 ssh asier@192.168.56.105 -p 22022
+   42  2025-11-03 07:32:00 sudo systemctl status httpd
+   43  2025-11-03 07:32:12 sudo systemctl enable httpd
+   44  2025-11-03 07:32:19 sudo systemctl start httpd
+   45  2025-11-03 07:32:21 sudo systemctl status httpd
+   46  2025-11-03 07:33:21 curl 127.0.0.1
+   47  2025-11-03 07:35:20 firewall-cmd --add-port=80/tcp --permanent
+   48  2025-11-03 07:35:28 sudo firewall-cmd --add-port=80/tcp --permanent
+   49  2025-11-03 07:35:41 sudo firewall-cmd --reload
+   50  2025-11-03 07:36:17 sudo systemctl status httpd
+   51  2025-11-03 07:39:44 php -a
+   52  2025-11-03 07:39:53 sudo dnf install php
+   53  2025-11-03 07:40:11 php -a
+   54  2025-11-03 07:41:29 sudo dnf install mariadb
+   55  2025-11-03 07:42:21 sudo dnf install mariadb mariadb-server
+   56  2025-11-03 07:43:08 sudo dnf install php-mysqlnd
+   57  2025-11-03 07:44:47 mysql -u root -p
+   58  2025-11-03 07:45:04 mysql -u root 
+   59  2025-11-03 07:45:25 mysql_secure_installation
+   60  2025-11-03 07:46:12 sudo systemctl status mariadb-server
+   61  2025-11-03 07:46:16 sudo systemctl status mariadb
+   62  2025-11-03 07:46:26 sudo systemctl enable mariadb
+   63  2025-11-03 07:46:31 sudo systemctl start mariadb
+   64  2025-11-03 07:46:40 sudo systemctl status mariadb
+   65  2025-11-03 07:46:53 mysql -u root 
+   66  2025-11-03 07:47:06 mysql_secure_installation
+   67  2025-11-03 07:48:37 mysql -u root 
+   68  2025-11-03 07:48:40 mysql -u root -p
+   69  2025-11-03 08:00:32 vi /etc/httpd/conf/httpd.conf 
+   70  2025-11-03 08:01:21 cat /etc/httpd/conf/httpd.conf | grep DirectoryIndex
+   71  2025-11-03 08:01:32 vi /etc/httpd/conf/httpd.conf 
+   72  2025-11-03 08:03:25 sudo vi /etc/httpd/conf/httpd.conf 
+   73  2025-11-03 08:04:14 sudo systemctl restart httpd
+   74  2025-11-03 08:04:20 sudo systemctl status httpd
+   75  2025-11-03 08:05:10 vi /var/www/html/index.php
+   76  2025-11-03 08:13:23 nano /var/www/html/index.php
+   77  2025-11-03 08:13:33 touch /var/www/html/index.php
+   78  2025-11-03 08:13:37 sudo touch /var/www/html/index.php
+   79  2025-11-03 08:14:03 ls /var/www/html/index.php 
+   80  2025-11-03 08:14:06 ls /var/www/html/
+   81  2025-11-03 08:14:17 vi /var/www/html/index.php
+   82  2025-11-03 08:14:25 sudo vi /var/www/html/index.php
+   83  2025-11-03 08:19:51 cat /var/www/html/index.php 
+   84  2025-11-03 08:20:40 mysql -u root -p
+   85  2025-11-03 08:24:54 history
+   86  2025-11-03 08:25:12 history > history_P2_L3_Alma.txt
+   87  2025-11-03 08:25:24 cat history_P2_L3_Alma.txt 
+   88  2025-11-03 08:25:33 vi history_P2_L3_Alma.txt 
+   89  2025-11-03 08:26:47 vi .bashrc 
+   90  2025-11-03 08:27:30 source .bashrc 
+   91  2025-11-03 08:27:56 vi .bashrc 
+   92  2025-11-03 08:29:11 history
+   93  2025-11-03 08:29:14 source .bashrc 
+   94  2025-11-03 08:29:16 history
+   95  2025-11-03 08:29:22 history > history_P2_L3_Alma.txt
+   96  2025-11-03 08:29:28 vi history_P2_L3_Alma.txt 
+   97  2025-11-03 08:29:57 vi .bashrc 
+   98  2025-11-03 08:30:14 source .bashrc 
+   99  2025-11-03 08:30:19 history > history_P2_L3_Alma.txt
