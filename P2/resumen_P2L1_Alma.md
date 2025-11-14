@@ -51,5 +51,13 @@ Y no nos olvidamos de dejar constancia de ello en sshd_config.
 Con esto tenemos acceso por medio de shh seguro!
 
 
+## El firewall
+
+La última línea era mentira, ya que el firewall nativo de Alma, como es típico de Red Hat, no nos deja pasar.
+Por suerte bastará con añadir el puerto con firewall-cmd --add-port 22022/tcp.
+
+Y ahora sí tenemos ssh seguro!
+
+
 
 
