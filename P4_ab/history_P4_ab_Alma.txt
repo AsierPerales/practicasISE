@@ -1,0 +1,115 @@
+    1  2025-12-01 14:19:55 lsblk
+    2  2025-12-01 14:19:55 fdisk /dev/sdb 
+    3  2025-12-01 14:19:55 visudo /etc/sudoers
+    4  2025-12-01 14:19:55 logout
+    5  2025-12-01 14:19:55 lsblk
+    6  2025-12-01 14:19:55 fdisk /dev/sdb
+    7  2025-12-01 14:19:55 sudo fdisk /dev/sdb
+    8  2025-12-01 14:19:55 lsblk
+    9  2025-12-01 14:19:55 pvcreate /dev/sdb1
+   10  2025-12-01 14:19:55 sudo pvcreate /dev/sdb1
+   11  2025-12-01 14:19:55 lsblk
+   12  2025-12-01 14:19:55 pvs
+   13  2025-12-01 14:19:55 sudo pvs
+   14  2025-12-01 14:19:55 sudo vgextend almalinux /dev/sdb1
+   15  2025-12-01 14:19:55 sudo vgs
+   16  2025-12-01 14:19:55 sudo lvcreate -n new_var -L 3G almalinux
+   17  2025-12-01 14:19:55 lvs
+   18  2025-12-01 14:19:55 sudo lvs
+   19  2025-12-01 14:19:55 sudo mkfs -t ext4 /dev/almalinux/new_var 
+   20  2025-12-01 14:19:55 mkdir /new_var
+   21  2025-12-01 14:19:55 sudo mkdir /new_var
+   22  2025-12-01 14:19:55 sudo mount /dev/almalinux/new_var /new_var
+   23  2025-12-01 14:19:55 lsblk
+   24  2025-12-01 14:19:55 su
+   25  2025-12-01 14:19:55 exit
+   26  2025-11-15 07:48:06 sudo rpm -Uvh https://repo.zabbix.com/zabbix/6.4/rhel/8/x86_64/zabbix-release-6.4-1.el8.noarch.rpm
+   27  2025-11-15 07:48:21 sudo dnf clean all
+   28  2025-11-15 07:48:29 sudo dnf install zabbix-agent -y
+   29  2025-11-15 07:55:31 nano /etc/zabbix/zabbix_agentd.conf 
+   30  2025-11-15 07:55:36 vi /etc/zabbix/zabbix_agentd.conf 
+   31  2025-11-15 07:56:13 sudo vi /etc/zabbix/zabbix_agentd.conf 
+   32  2025-11-15 07:58:42 sudo systemctl restart zabbix-agent
+   33  2025-11-15 07:58:50 sudo systemctl enable zabbix-agent
+   34  2025-11-15 07:59:30 sudo firewall-cmd --permanent --addport=10050/tcp 
+   35  2025-11-15 07:59:48 sudo firewall-cmd --addport=10050/tcp --permanent
+   36  2025-11-15 07:59:53 sudo firewall-cmd --addport 10050/tcp --permanent
+   37  2025-11-15 08:00:02 sudo firewall-cmd --add-port=10050/tcp --permanent
+   38  2025-11-15 08:00:08 sudo firewall-cmd --reload
+   39  2025-11-15 08:17:09 sudo systemctl restart zabbix-agent
+   40  2025-11-15 08:17:18 sudo systemctl enable zabbix-agent
+   41  2025-11-15 08:18:15 sudo systemctl status zabbix-agent
+   42  2025-11-15 08:20:18 ping 8.8.8.8
+   43  2025-11-15 08:20:53 sudo firewall-cmd --add-port=80/tcp --permanent
+   44  2025-11-15 08:21:00 sudo firewall-cmd --add-port=22/tcp --permanent
+   45  2025-11-15 08:21:04 sudo firewall-cmd --add-port=22022/tcp --permanent
+   46  2025-11-15 08:23:10 reboot
+   47  2025-11-15 08:23:18 sudo reboot
+   48  2025-11-15 07:38:54 sudo dnf install -y zabbix-agent
+   49  2025-11-15 07:39:26 nmtui
+   50  2025-11-15 07:39:40 ping 8.8.8.8
+   51  2025-11-15 07:39:44 ip a
+   52  2025-11-15 07:39:51 nmtui
+   53  2025-11-15 07:39:59 sudo nmtui
+   54  2025-11-15 07:40:04 ip a
+   55  2025-11-15 07:40:07 ping 8.8.8.8
+   56  2025-11-15 07:41:52 nmtui
+   57  2025-11-15 07:42:13 ping 8.8.8.8
+   58  2025-11-15 07:42:21 sudo dnf install -y zabbix-agent
+   59  2025-11-15 07:43:15 sudo dnf search zabbix-agent
+   60  2025-11-15 07:43:25 sudo dnf install zabbix-agent
+   61  2025-11-15 08:24:46 sudo systemctl status zabbix-agent
+   62  2025-11-15 08:25:12 sudo vi /etc/zabbix/zabbix_agentd.conf 
+   63  2025-11-15 08:26:22 ping 192.168.56.105
+   64  2025-11-15 08:26:41 nc -zv 12.168.56.105 10051
+   65  2025-11-15 08:27:04 sudo firewall-cmd --add-port=10051/tcp --permanent
+   66  2025-11-15 08:27:11 sudo firewall-cmd --reload
+   67  2025-11-15 08:29:06 sudo tail -f /var/log/zabbix/zabbix_agentd.log
+   68  2025-11-15 08:29:31 ping 192.168.56.105
+   69  2025-11-15 08:57:50 exit
+   70  2025-11-15 08:59:05 ssh asier@192.168.56.105 -p 22022
+   71  2025-11-15 09:09:07 exit
+   72  2025-11-21 07:48:53 ip a
+   73  2025-11-21 07:48:57 ping 8.8.8.8
+   74  2025-11-21 07:49:00 nmtui
+   75  2025-11-21 07:49:09 history
+   76  2025-11-21 07:49:29 nmtui
+   77  2025-11-21 07:49:39 sudo nmtui
+   78  2025-11-21 07:51:48 ping 8.8.8.8
+   79  2025-11-21 07:52:01 sudo dnf update
+   80  2025-11-21 07:59:28 df -h
+   81  2025-11-21 07:59:47 sudo dnf install -y epel-release
+   82  2025-11-21 08:00:06 sudo dnf install -y ansible
+   83  2025-11-21 08:01:38 ansible --version
+   84  2025-11-21 08:03:25 vi /etc/ansible/hosts 
+   85  2025-11-21 08:16:15 sudo vi /etc/ansible/hosts 
+   86  2025-11-21 08:16:44 ansible all -m ping
+   87  2025-11-21 08:18:22 exit
+   88  2025-11-21 08:21:06 cat /etc/ansible/hosts 
+   89  2025-11-21 08:21:56 ssh-keygen -F 192.168.56.110
+   90  2025-11-21 08:22:18 ssh-keyscan -p 22022 192.168.56.110 >> ~/.ssh/known_hosts
+   91  2025-11-21 08:22:29 exit
+   92  2025-12-01 10:53:50 ip a
+   93  2025-12-01 10:53:54 ping 8.8.8.8
+   94  2025-12-01 10:53:57 nmtui
+   95  2025-12-01 10:54:08 sudo nmtui
+   96  2025-12-01 14:17:17 ping 8.8.8.8
+   97  2025-12-01 14:17:20 nmtui
+   98  2025-12-01 14:17:31 sudo nmtui
+   99  2025-12-01 14:17:45 ping 8.8.8.8
+  100  2025-12-01 14:17:48 sudo nmtui
+  101  2025-12-01 14:19:58 man gnuplot
+  102  2025-12-01 14:20:37 ab -v 4 -c 100 -n 1000 -r -g ab_Alma_plot.data http://192.168.56.110/
+  103  2025-12-01 14:20:41 ls
+  104  2025-12-01 14:20:46 gnuplot
+  105  2025-12-01 14:22:27 history > history_P4_ab_Alma.txt
+  106  2025-12-01 14:22:28 ls
+  107  2025-12-01 14:27:36 cat ab_Alma_plot.data 
+  108  2025-12-01 14:40:06 ab -c 100 -n 2000 -r http://192.168.56.110/
+  109  2025-12-01 14:40:17 ab -c 100 -n 3000 -r http://192.168.56.110/
+  110  2025-12-01 14:40:25 ab -c 100 -n 4000 -r http://192.168.56.110/
+  111  2025-12-01 14:40:33 ab -c 100 -n 10000 -r http://192.168.56.110/
+  112  2025-12-01 14:40:45 ab -c 200 -n 20000 -r http://192.168.56.110/
+  113  2025-12-01 14:41:15 ab -c 200 -n 30000 -r http://192.168.56.110/
+  114  2025-12-01 14:42:59 ls
+  115  2025-12-01 14:43:09 history > history_P4_ab_Alma.txt
