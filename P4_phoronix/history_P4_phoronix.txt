@@ -1,0 +1,133 @@
+    1  2025-09-30 14:59:37 lsblk
+    2  2025-09-30 20:36:35 nano /home/asier/.bashrc 
+    3  2025-09-30 20:38:30 source /home/asier/.bashrc 
+    4  2025-09-30 20:38:33 exit
+    5  2025-09-30 20:38:55 history
+    6  2025-09-30 20:39:50 su
+    7  2025-09-30 20:40:59 exit
+    8  2025-09-30 20:41:34 cat /etc/groups
+    9  2025-09-30 20:41:35 cat /etc/group
+   10  2025-09-30 20:42:00 sudo ls /
+   11  2025-09-30 20:42:09 sudo poweroff
+   12  2025-10-23 18:36:30 exit
+   13  2025-10-30 17:41:59 ls
+   14  2025-10-30 17:56:07 ip a
+   15  2025-10-30 17:56:38 ping 8.8.8.8
+   16  2025-10-30 17:56:51 sudo apt install netplan.io
+   17  2025-10-30 17:57:54 sudo systemctl enable --now systemd-networkd
+   18  2025-10-30 17:58:31 sudo systemctl disable --now networking
+   19  2025-10-30 17:59:09 sudo systemctl status systemd-networkd
+   20  2025-10-30 17:59:41 sudo nano /etc/netplan/00-installer-config.yaml
+   21  2025-10-30 18:01:48 cat /etc/netplan/00-installer-config.yaml 
+   22  2025-10-30 18:02:15 sudo netplan apply
+   23  2025-10-30 18:02:36 ip a
+   24  2025-10-30 18:03:59 sudo reboot
+   25  2025-10-30 18:22:54 exit
+   26  2025-11-15 11:24:18 history
+   27  2025-11-15 11:24:24 git -v
+   28  2025-11-15 11:24:37 git clone https://git.zabbix.com/scm/zbx/zabbix.git
+   29  2025-11-15 11:26:34 df -h
+   30  2025-11-15 11:27:07 ls
+   31  2025-11-15 11:30:48 sudo mkdir -p /opt/zabbix
+   32  2025-11-15 11:30:57 ls /opt
+   33  2025-11-15 11:31:03 ls -l /opt
+   34  2025-11-15 11:31:20 git clone https://git.zabbix.com/scm/zbx/zabbix.git /opt/zabbix
+   35  2025-11-15 11:31:26 ls -l /opt
+   36  2025-11-15 11:31:43 sudo chmod 777 /opt/zabbix/
+   37  2025-11-15 11:31:45 ls -l /opt
+   38  2025-11-15 11:31:50 git clone https://git.zabbix.com/scm/zbx/zabbix.git /opt/zabbix
+   39  2025-11-15 11:34:40 ip a
+   40  2025-11-15 11:36:20 git clone https://git.zabbix.com/scm/zbx/zabbix.git /opt/zabbix
+   41  2025-11-15 11:42:30 git clone git://git.zabbix.com/scm/zbx/zabbix.git /opt/zabbix
+   42  2025-11-15 11:51:46 git clone --depth 1 https://git.zabbix.com/scm/zbx/zabbix.git /opt/zabbix
+   43  2025-11-15 12:06:15 lsb_release -a
+   44  2025-11-15 12:08:54 sudo rm -r /opt/zabbix/
+   45  2025-11-15 12:09:02 ls /opt/
+   46  2025-11-15 12:09:20 wget https://repo.zabbix.com/zabbix/7.4/release/debian/pool/main/z/  zabbix-release/zabbix-release_latest_7.4+debian13_all.deb
+   47  2025-11-15 12:09:49 wget https://repo.zabbix.com/zabbix/7.4/release/debian/pool/main/z/zabbix-release/zabbix-release_latest_7.4+debian13_all.deb
+   48  2025-11-15 12:12:21 apt install zabbix-server-mysql zabbix-frontend-php zabbix-apache-conf zabbix-sql-scripts zabbix-agent
+   49  2025-11-15 12:12:27 sudo apt install zabbix-server-mysql zabbix-frontend-php zabbix-apache-conf zabbix-sql-scripts zabbix-agent
+   50  2025-11-15 12:14:44 dpkg -i zabbix-release_latest_7.4+debian13_all.deb
+   51  2025-11-15 12:14:47 sudo dpkg -i zabbix-release_latest_7.4+debian13_all.deb
+   52  2025-11-15 12:14:54 sudo apt update
+   53  2025-11-15 12:15:15 sudo apt install zabbix-server-mysql zabbix-frontend-php zabbix-apache-conf zabbix-sql-scripts zabbix-agent
+   54  2025-11-15 12:21:56 mysql -u root -p
+   55  2025-11-15 12:22:10 ip a
+   56  2025-11-15 12:22:18 mysql -u root 
+   57  2025-11-15 12:22:43 mysql_secure_installation
+   58  2025-11-15 12:22:51 sudo apt install mysql
+   59  2025-11-15 12:23:43 sudo apt install mariadb-server mariadb-client
+   60  2025-11-15 12:25:18 sudo systemctl status mariadb
+   61  2025-11-15 12:25:40 sudo mariadb-secure-installation 
+   62  2025-11-15 12:26:33 mysql -u root
+   63  2025-11-15 12:26:36 mysql -u root -p
+   64  2025-11-15 12:27:01 sudo mariadb-secure-installation 
+   65  2025-11-15 12:27:35 mysql -u root -p
+   66  2025-11-15 12:32:16 zcat /usr/share/zabbix/sql-scripts/mysql/server.sql.gz | mysql --default-character-set=utf8mb4 -uzabbix -p zabbix 
+   67  2025-11-15 12:35:14 mysql -u root -p
+   68  2025-11-15 12:41:13 zcat /usr/share/zabbix/sql-scripts/mysql/server.sql.gz | mysql --default-character-set=utf8mb4 -uzabbix -p zabbix 
+   69  2025-11-15 12:50:41 mysql -u root -p
+   70  2025-11-15 12:53:24 nano /etc/zabbix/zabbix_server.conf 
+   71  2025-11-15 12:53:32 sudo nano /etc/zabbix/zabbix_server.conf 
+   72  2025-11-15 12:54:54 sudo systemctl restart zabbix-server zabbix-agent apache2
+   73  2025-11-15 12:55:07 systemctl enable zabbix-server zabbix-agent apache2
+   74  2025-11-15 12:55:10 sudo systemctl enable zabbix-server zabbix-agent apache2
+   75  2025-11-15 13:00:11 sudo nano /etc/zabbix/zabbix_server.conf 
+   76  2025-11-15 13:01:15 sudo systemctl restart zabbix-server zabbix-agent apache2
+   77  2025-11-15 13:01:20 sudo systemctl enable zabbix-server zabbix-agent apache2
+   78  2025-11-15 13:03:13 sudo nano /etc/zabbix/zabbix_server.conf 
+   79  2025-11-15 13:03:54 sudo systemctl restart zabbix-server zabbix-agent apache2
+   80  2025-11-15 13:03:57 sudo systemctl enable zabbix-server zabbix-agent apache2
+   81  2025-11-15 13:05:01 sudo nano /etc/zabbix/zabbix_server.conf 
+   82  2025-11-15 13:06:09 sudo nano /etc/zabbix/apache.conf 
+   83  2025-11-15 13:07:20 sudo systemctl restart zabbix-server zabbix-agent apache2
+   84  2025-11-15 13:07:22 sudo systemctl enable zabbix-server zabbix-agent apache2
+   85  2025-11-15 13:09:00 sudo ufw allow 80/tcp
+   86  2025-11-15 13:09:07 sudo ufw allow 443/tcp
+   87  2025-11-15 13:20:11 history
+   88  2025-11-15 13:20:32 history > history P3_zabbix.txt
+   89  2025-11-15 13:20:42 history > history_P3_zabbix.txt
+   90  2025-11-15 13:20:48 cat history_P3_zabbix.txt 
+   91  2025-11-15 13:20:57 exit
+   92  2025-12-01 15:39:36 ls
+   93  2025-12-01 15:39:56 phoronix-test-suite benchmark smallpt
+   94  2025-12-01 15:41:18 php -a
+   95  2025-12-01 15:42:29 sudo apt search phoronix-test-suite
+   96  2025-12-01 15:42:38 sudo apt search phoronix
+   97  2025-12-01 15:42:47 ping 8.8.8.8
+   98  2025-12-01 15:42:54 sudo apt search phoronix
+   99  2025-12-01 15:44:35 git clone git@github.com:phoronix-test-suite/phoronix-test-suite.git
+  100  2025-12-01 15:44:45 sudo git clone git@github.com:phoronix-test-suite/phoronix-test-suite.git
+  101  2025-12-01 15:45:01 git clone https://github.com/phoronix-test-suite/phoronix-test-suite.git
+  102  2025-12-01 15:45:15 ls
+  103  2025-12-01 15:45:20 cd phoronix-test-suite/
+  104  2025-12-01 15:45:21 ls
+  105  2025-12-01 15:45:29 cat README.md 
+  106  2025-12-01 15:45:54 ls
+  107  2025-12-01 15:46:01 ./phoronix-test-suite 
+  108  2025-12-01 15:46:12 man phoronix
+  109  2025-12-01 15:48:25 phoronix-test-suite help
+  110  2025-12-01 15:48:36 ./install-sh 
+  111  2025-12-01 15:48:41 sudo ./install-sh 
+  112  2025-12-01 15:49:25 phoronix-test-suite benchmark smallpt
+  113  2025-12-01 16:02:00 ls
+  114  2025-12-01 16:02:03 cd ..
+  115  2025-12-01 16:02:04 ls
+  116  2025-12-01 16:02:13 cat history
+  117  2025-12-01 16:22:12 phoronix-test-suite batch-setup
+  118  2025-12-01 16:22:50 cd phoronix-test-suite/
+  119  2025-12-01 16:22:50 ls
+  120  2025-12-01 16:23:10 ls pts-core/
+  121  2025-12-01 16:23:20 ls deploy/
+  122  2025-12-01 16:26:59 phoronix-test-suite batch-run pts/cpu pts/stream pts/fio
+  123  2025-12-01 16:27:29 phoronix-test-suite batch-run pts/cpu 
+  124  2025-12-01 16:30:10 phoronix-test-suite batch-run run-random-tests
+  125  2025-12-01 16:30:22 phoronix-test-suite batch-run 
+  126  2025-12-01 16:31:48 phoronix-test-suite batch-run llama-cpp byte petsc
+  127  2025-12-01 16:32:17 phoronix-test-suite install pts/llama-cpp pts/byte pts/petsc
+  128  2025-12-01 16:34:31 phoronix-test-suite batch-run llama-cpp smallpt
+  129  2025-12-01 16:48:22 phoronix-test-suite result-file-to-html prueba1
+  130  2025-12-01 16:48:39 cd
+  131  2025-12-01 16:48:42 cat prueba1.html 
+  132  2025-12-01 16:48:49 ls
+  133  2025-12-01 16:49:04 history > history_P4_phoronix.txt
